@@ -33,11 +33,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txttendangnhap = new System.Windows.Forms.TextBox();
+            this.txtmatkhau = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnthoat = new System.Windows.Forms.Button();
+            this.btndangnhap = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txttendangnhap);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
@@ -65,7 +65,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtmatkhau);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(3, 53);
             this.panel3.Name = "panel3";
@@ -74,8 +74,8 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btndangnhap);
+            this.panel4.Controls.Add(this.btnthoat);
             this.panel4.Location = new System.Drawing.Point(3, 103);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(447, 52);
@@ -90,19 +90,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Đăng Nhập:";
             // 
-            // textBox1
+            // txttendangnhap
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(261, 22);
-            this.textBox1.TabIndex = 1;
+            this.txttendangnhap.Location = new System.Drawing.Point(158, 10);
+            this.txttendangnhap.Name = "txttendangnhap";
+            this.txttendangnhap.Size = new System.Drawing.Size(261, 22);
+            this.txttendangnhap.TabIndex = 1;
             // 
-            // textBox2
+            // txtmatkhau
             // 
-            this.textBox2.Location = new System.Drawing.Point(158, 9);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(261, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtmatkhau.Location = new System.Drawing.Point(158, 9);
+            this.txtmatkhau.Name = "txtmatkhau";
+            this.txtmatkhau.Size = new System.Drawing.Size(261, 22);
+            this.txtmatkhau.TabIndex = 1;
+            this.txtmatkhau.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -113,23 +114,25 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Mật Khẩu:";
             // 
-            // button1
+            // btnthoat
             // 
-            this.button1.Location = new System.Drawing.Point(320, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnthoat.Location = new System.Drawing.Point(320, 5);
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(99, 37);
+            this.btnthoat.TabIndex = 0;
+            this.btnthoat.Text = "Thoát";
+            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
-            // button2
+            // btndangnhap
             // 
-            this.button2.Location = new System.Drawing.Point(180, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 37);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Đăng Nhập";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btndangnhap.Location = new System.Drawing.Point(180, 5);
+            this.btndangnhap.Name = "btndangnhap";
+            this.btndangnhap.Size = new System.Drawing.Size(99, 37);
+            this.btndangnhap.TabIndex = 0;
+            this.btndangnhap.Text = "Đăng Nhập";
+            this.btndangnhap.UseVisualStyleBackColor = true;
+            this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
             // 
             // FrmDangnhap
             // 
@@ -137,7 +140,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 185);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmDangnhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -153,13 +159,13 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btndangnhap;
+        private System.Windows.Forms.Button btnthoat;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtmatkhau;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttendangnhap;
         private System.Windows.Forms.Label label1;
     }
 }

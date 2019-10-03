@@ -16,5 +16,34 @@ namespace QuanLyBanHang
         {
             InitializeComponent();
         }
+
+        private void btndangnhap_Click(object sender, EventArgs e)
+        {
+            if(txttendangnhap.Text == "")
+            {
+                MessageBox.Show("Tên đăng nhập không được rỗng!");
+            }
+            else if(txtmatkhau.Text == "")
+            {
+                MessageBox.Show("Mật khẩu không được rỗng!");
+            }
+            else if(txttendangnhap.Text != "khaile" && txtmatkhau.Text != "khaile997")
+            {
+                MessageBox.Show("Tên và mật khẩu không đúng!");
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập thành công!");
+                FrmTrangchinh frm = new FrmTrangchinh();
+                frm.Show();
+                this.Hide();
+            }
+
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
