@@ -95,7 +95,7 @@
             this.txttendangnhap.Location = new System.Drawing.Point(158, 10);
             this.txttendangnhap.Name = "txttendangnhap";
             this.txttendangnhap.Size = new System.Drawing.Size(261, 22);
-            this.txttendangnhap.TabIndex = 1;
+            this.txttendangnhap.TabIndex = 0;
             // 
             // txtmatkhau
             // 
@@ -116,10 +116,11 @@
             // 
             // btnthoat
             // 
+            this.btnthoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnthoat.Location = new System.Drawing.Point(320, 5);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(99, 37);
-            this.btnthoat.TabIndex = 0;
+            this.btnthoat.TabIndex = 3;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
@@ -129,17 +130,20 @@
             this.btndangnhap.Location = new System.Drawing.Point(180, 5);
             this.btndangnhap.Name = "btndangnhap";
             this.btndangnhap.Size = new System.Drawing.Size(99, 37);
-            this.btndangnhap.TabIndex = 0;
+            this.btndangnhap.TabIndex = 2;
             this.btndangnhap.Text = "Đăng Nhập";
             this.btndangnhap.UseVisualStyleBackColor = true;
             this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
             // 
             // FrmDangnhap
             // 
+            this.AcceptButton = this.btndangnhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnthoat;
             this.ClientSize = new System.Drawing.Size(476, 185);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDangnhap";
