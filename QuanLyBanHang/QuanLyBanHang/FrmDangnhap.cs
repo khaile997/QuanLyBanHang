@@ -27,9 +27,9 @@ namespace QuanLyBanHang
             {
                 MessageBox.Show("Mật khẩu không được rỗng!");
             }
-            else if(txttendangnhap.Text != "khaile" && txtmatkhau.Text != "khaile997")
+            else if(txttendangnhap.Text != "admin" && txtmatkhau.Text != "123456")
             {
-                MessageBox.Show("Tên và mật khẩu không đúng!");
+                MessageBox.Show("Đăng nhập không thành công! Vui lòng kiểm tra lại tài khoản và mật khẩu.");
             }
             else
             {
