@@ -479,7 +479,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmDanhmuckhachhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmDanhmuckhachhang";
+            this.Text = "Danh Mục Khách Hàng";
             this.Load += new System.EventHandler(this.FrmDanhmuckhachhang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseQuanLyBanHangDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();

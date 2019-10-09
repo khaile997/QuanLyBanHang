@@ -17,14 +17,6 @@ namespace QuanLyBanHang.Functions
             InitializeComponent();
         }
 
-        private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.customersBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.databaseQuanLyBanHangDataSet);
-
-        }
-
         private void FrmDanhmuckhachhang_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'databaseQuanLyBanHangDataSet.customers' table. You can move, or remove it, as needed.
