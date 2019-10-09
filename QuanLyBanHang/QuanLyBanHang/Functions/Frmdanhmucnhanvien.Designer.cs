@@ -599,6 +599,7 @@
             this.Controls.Add(last_nameLabel);
             this.Controls.Add(this.txtlastname);
             this.Name = "Frmdanhmucnhanvien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Mục Nhân Viên";
             this.Load += new System.EventHandler(this.Frmdanhmucnhanvien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseQuanLyBanHangDataSet)).EndInit();
