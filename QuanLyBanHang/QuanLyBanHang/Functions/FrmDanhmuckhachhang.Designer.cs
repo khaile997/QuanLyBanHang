@@ -89,6 +89,105 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvcustomers)).BeginInit();
             this.SuspendLayout();
             // 
+            // last_nameLabel
+            // 
+            last_nameLabel.AutoSize = true;
+            last_nameLabel.Location = new System.Drawing.Point(52, 30);
+            last_nameLabel.Name = "last_nameLabel";
+            last_nameLabel.Size = new System.Drawing.Size(73, 17);
+            last_nameLabel.TabIndex = 0;
+            last_nameLabel.Text = "last name:";
+            // 
+            // first_nameLabel
+            // 
+            first_nameLabel.AutoSize = true;
+            first_nameLabel.Location = new System.Drawing.Point(59, 71);
+            first_nameLabel.Name = "first_nameLabel";
+            first_nameLabel.Size = new System.Drawing.Size(74, 17);
+            first_nameLabel.TabIndex = 2;
+            first_nameLabel.Text = "first name:";
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new System.Drawing.Point(80, 111);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(45, 17);
+            emailLabel.TabIndex = 4;
+            emailLabel.Text = "email:";
+            // 
+            // companyLabel
+            // 
+            companyLabel.AutoSize = true;
+            companyLabel.Location = new System.Drawing.Point(432, 30);
+            companyLabel.Name = "companyLabel";
+            companyLabel.Size = new System.Drawing.Size(69, 17);
+            companyLabel.TabIndex = 6;
+            companyLabel.Text = "company:";
+            // 
+            // phoneLabel
+            // 
+            phoneLabel.AutoSize = true;
+            phoneLabel.Location = new System.Drawing.Point(449, 71);
+            phoneLabel.Name = "phoneLabel";
+            phoneLabel.Size = new System.Drawing.Size(52, 17);
+            phoneLabel.TabIndex = 8;
+            phoneLabel.Text = "phone:";
+            // 
+            // address1Label
+            // 
+            address1Label.AutoSize = true;
+            address1Label.Location = new System.Drawing.Point(432, 109);
+            address1Label.Name = "address1Label";
+            address1Label.Size = new System.Drawing.Size(71, 17);
+            address1Label.TabIndex = 10;
+            address1Label.Text = "address1:";
+            // 
+            // postal_codeLabel
+            // 
+            postal_codeLabel.AutoSize = true;
+            postal_codeLabel.Location = new System.Drawing.Point(418, 146);
+            postal_codeLabel.Name = "postal_codeLabel";
+            postal_codeLabel.Size = new System.Drawing.Size(85, 17);
+            postal_codeLabel.TabIndex = 12;
+            postal_codeLabel.Text = "postal code:";
+            // 
+            // address2Label
+            // 
+            address2Label.AutoSize = true;
+            address2Label.Location = new System.Drawing.Point(784, 32);
+            address2Label.Name = "address2Label";
+            address2Label.Size = new System.Drawing.Size(71, 17);
+            address2Label.TabIndex = 14;
+            address2Label.Text = "address2:";
+            // 
+            // cityLabel
+            // 
+            cityLabel.AutoSize = true;
+            cityLabel.Location = new System.Drawing.Point(822, 69);
+            cityLabel.Name = "cityLabel";
+            cityLabel.Size = new System.Drawing.Size(33, 17);
+            cityLabel.TabIndex = 16;
+            cityLabel.Text = "city:";
+            // 
+            // stateLabel
+            // 
+            stateLabel.AutoSize = true;
+            stateLabel.Location = new System.Drawing.Point(812, 106);
+            stateLabel.Name = "stateLabel";
+            stateLabel.Size = new System.Drawing.Size(43, 17);
+            stateLabel.TabIndex = 18;
+            stateLabel.Text = "state:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new System.Drawing.Point(796, 143);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(59, 17);
+            countryLabel.TabIndex = 20;
+            countryLabel.Text = "country:";
+            // 
             // databaseQuanLyBanHangDataSet
             // 
             this.databaseQuanLyBanHangDataSet.DataSetName = "DatabaseQuanLyBanHangDataSet";
@@ -114,15 +213,6 @@
             this.tableAdapterManager.productsTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = QuanLyBanHang.DatabaseQuanLyBanHangDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // last_nameLabel
-            // 
-            last_nameLabel.AutoSize = true;
-            last_nameLabel.Location = new System.Drawing.Point(52, 30);
-            last_nameLabel.Name = "last_nameLabel";
-            last_nameLabel.Size = new System.Drawing.Size(73, 17);
-            last_nameLabel.TabIndex = 0;
-            last_nameLabel.Text = "last name:";
-            // 
             // txtlastname
             // 
             this.txtlastname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "last_name", true));
@@ -130,15 +220,6 @@
             this.txtlastname.Name = "txtlastname";
             this.txtlastname.Size = new System.Drawing.Size(166, 22);
             this.txtlastname.TabIndex = 1;
-            // 
-            // first_nameLabel
-            // 
-            first_nameLabel.AutoSize = true;
-            first_nameLabel.Location = new System.Drawing.Point(59, 71);
-            first_nameLabel.Name = "first_nameLabel";
-            first_nameLabel.Size = new System.Drawing.Size(74, 17);
-            first_nameLabel.TabIndex = 2;
-            first_nameLabel.Text = "first name:";
             // 
             // txtfirstname
             // 
@@ -148,15 +229,6 @@
             this.txtfirstname.Size = new System.Drawing.Size(166, 22);
             this.txtfirstname.TabIndex = 3;
             // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(80, 111);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(45, 17);
-            emailLabel.TabIndex = 4;
-            emailLabel.Text = "email:";
-            // 
             // txtemail
             // 
             this.txtemail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "email", true));
@@ -164,15 +236,6 @@
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(166, 22);
             this.txtemail.TabIndex = 5;
-            // 
-            // companyLabel
-            // 
-            companyLabel.AutoSize = true;
-            companyLabel.Location = new System.Drawing.Point(432, 30);
-            companyLabel.Name = "companyLabel";
-            companyLabel.Size = new System.Drawing.Size(69, 17);
-            companyLabel.TabIndex = 6;
-            companyLabel.Text = "company:";
             // 
             // txtcompany
             // 
@@ -182,15 +245,6 @@
             this.txtcompany.Size = new System.Drawing.Size(164, 22);
             this.txtcompany.TabIndex = 7;
             // 
-            // phoneLabel
-            // 
-            phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(449, 71);
-            phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(52, 17);
-            phoneLabel.TabIndex = 8;
-            phoneLabel.Text = "phone:";
-            // 
             // txtphone
             // 
             this.txtphone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "phone", true));
@@ -198,15 +252,6 @@
             this.txtphone.Name = "txtphone";
             this.txtphone.Size = new System.Drawing.Size(164, 22);
             this.txtphone.TabIndex = 9;
-            // 
-            // address1Label
-            // 
-            address1Label.AutoSize = true;
-            address1Label.Location = new System.Drawing.Point(432, 109);
-            address1Label.Name = "address1Label";
-            address1Label.Size = new System.Drawing.Size(71, 17);
-            address1Label.TabIndex = 10;
-            address1Label.Text = "address1:";
             // 
             // txtaddress1
             // 
@@ -216,15 +261,6 @@
             this.txtaddress1.Size = new System.Drawing.Size(162, 22);
             this.txtaddress1.TabIndex = 11;
             // 
-            // postal_codeLabel
-            // 
-            postal_codeLabel.AutoSize = true;
-            postal_codeLabel.Location = new System.Drawing.Point(418, 146);
-            postal_codeLabel.Name = "postal_codeLabel";
-            postal_codeLabel.Size = new System.Drawing.Size(85, 17);
-            postal_codeLabel.TabIndex = 12;
-            postal_codeLabel.Text = "postal code:";
-            // 
             // txtpostal
             // 
             this.txtpostal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "postal_code", true));
@@ -232,15 +268,6 @@
             this.txtpostal.Name = "txtpostal";
             this.txtpostal.Size = new System.Drawing.Size(162, 22);
             this.txtpostal.TabIndex = 13;
-            // 
-            // address2Label
-            // 
-            address2Label.AutoSize = true;
-            address2Label.Location = new System.Drawing.Point(784, 32);
-            address2Label.Name = "address2Label";
-            address2Label.Size = new System.Drawing.Size(71, 17);
-            address2Label.TabIndex = 14;
-            address2Label.Text = "address2:";
             // 
             // txtaddress2
             // 
@@ -250,15 +277,6 @@
             this.txtaddress2.Size = new System.Drawing.Size(168, 22);
             this.txtaddress2.TabIndex = 15;
             // 
-            // cityLabel
-            // 
-            cityLabel.AutoSize = true;
-            cityLabel.Location = new System.Drawing.Point(822, 69);
-            cityLabel.Name = "cityLabel";
-            cityLabel.Size = new System.Drawing.Size(33, 17);
-            cityLabel.TabIndex = 16;
-            cityLabel.Text = "city:";
-            // 
             // txtcity
             // 
             this.txtcity.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "city", true));
@@ -267,15 +285,6 @@
             this.txtcity.Size = new System.Drawing.Size(168, 22);
             this.txtcity.TabIndex = 17;
             // 
-            // stateLabel
-            // 
-            stateLabel.AutoSize = true;
-            stateLabel.Location = new System.Drawing.Point(812, 106);
-            stateLabel.Name = "stateLabel";
-            stateLabel.Size = new System.Drawing.Size(43, 17);
-            stateLabel.TabIndex = 18;
-            stateLabel.Text = "state:";
-            // 
             // txtstate
             // 
             this.txtstate.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "state", true));
@@ -283,15 +292,6 @@
             this.txtstate.Name = "txtstate";
             this.txtstate.Size = new System.Drawing.Size(168, 22);
             this.txtstate.TabIndex = 19;
-            // 
-            // countryLabel
-            // 
-            countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(796, 143);
-            countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(59, 17);
-            countryLabel.TabIndex = 20;
-            countryLabel.Text = "country:";
             // 
             // txtcountry
             // 
@@ -406,6 +406,7 @@
             this.btnthoat.TabIndex = 23;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btnluu
             // 

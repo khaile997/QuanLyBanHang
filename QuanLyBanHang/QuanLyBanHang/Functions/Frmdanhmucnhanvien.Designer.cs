@@ -547,6 +547,7 @@
             this.btnthoat.TabIndex = 35;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // nudmanager_id
             // 

@@ -445,6 +445,7 @@
             this.btnthoat.TabIndex = 40;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // Frmdanhmucsanpham
             // 

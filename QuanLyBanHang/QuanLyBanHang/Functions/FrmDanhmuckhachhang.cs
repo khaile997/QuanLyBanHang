@@ -23,5 +23,12 @@ namespace QuanLyBanHang.Functions
             this.customersTableAdapter.Fill(this.databaseQuanLyBanHangDataSet.customers);
 
         }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            FrmTrangchinh trangchinh = new FrmTrangchinh();
+            this.Close();
+            trangchinh.Show();
+        }
     }
 }
