@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -61,6 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseQuanLyBanHangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseQuanLyBanHangDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmDangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +78,12 @@
     <Compile Include="FrmTrangchinh.Designer.cs">
       <DependentUpon>FrmTrangchinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions\FrmDanhmuckhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\FrmDanhmuckhachhang.Designer.cs">
+      <DependentUpon>FrmDanhmuckhachhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmDangnhap.resx">
@@ -80,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrangchinh.resx">
       <DependentUpon>FrmTrangchinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\FrmDanhmuckhachhang.resx">
+      <DependentUpon>FrmDanhmuckhachhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +105,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DatabaseQuanLyBanHangDataSet.xsc">
+      <DependentUpon>DatabaseQuanLyBanHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseQuanLyBanHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseQuanLyBanHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseQuanLyBanHangDataSet.xss">
+      <DependentUpon>DatabaseQuanLyBanHangDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,17 +130,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\DatabaseQuanLyBanHang.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\DatabaseQuanLyBanHang_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DatabaseQuanLyBanHang.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\hinh-anh-tour-du-lich-chau-au-phap-bi-ha-lan-duc-9n8d.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Functions\" />
     <Folder Include="Reports\" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +146,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\DatabaseQuanLyBanHang.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\DatabaseQuanLyBanHang_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DatabaseQuanLyBanHang.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
