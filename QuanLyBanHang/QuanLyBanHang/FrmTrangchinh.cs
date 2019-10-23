@@ -26,30 +26,49 @@ namespace QuanLyBanHang
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmDanhmuckhachhang khachhang = new FrmDanhmuckhachhang();
+            khachhang.MdiParent = this;
             khachhang.Show();
-            this.Hide();
+           
         }
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frmdanhmucnhanvien nhanvien = new Frmdanhmucnhanvien();
+            nhanvien.MdiParent = this;
             nhanvien.Show();
-            this.Hide();
+    
 
         }
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frmdanhmucsanpham sanpham = new Frmdanhmucsanpham();
+            sanpham.MdiParent = this;
             sanpham.Show();
-            this.Hide();
+            
         }
 
         private void đặtHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frmdanhmucdathang dathang = new Frmdanhmucdathang();
+            Frmdathang dathang = new Frmdathang();
+            dathang.MdiParent = this;
             dathang.Show();
-            this.Hide();
+           
+        }
+
+        private void cấuHìnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frmcauhinh cauhinh = new Frmcauhinh();
+            cauhinh.MdiParent = this;
+            cauhinh.Show();
+            
+        }
+
+        private void đặtHàngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frmdanhmucdathang dmdathang = new Frmdanhmucdathang();
+            dmdathang.MdiParent = this;
+            dmdathang.Show();
         }
     }
 }

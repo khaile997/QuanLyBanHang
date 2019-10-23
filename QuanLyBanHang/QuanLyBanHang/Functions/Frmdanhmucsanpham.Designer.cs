@@ -92,6 +92,105 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvproducts)).BeginInit();
             this.SuspendLayout();
             // 
+            // product_codeLabel
+            // 
+            product_codeLabel.AutoSize = true;
+            product_codeLabel.Location = new System.Drawing.Point(47, 28);
+            product_codeLabel.Name = "product_codeLabel";
+            product_codeLabel.Size = new System.Drawing.Size(95, 17);
+            product_codeLabel.TabIndex = 1;
+            product_codeLabel.Text = "product code:";
+            // 
+            // product_nameLabel
+            // 
+            product_nameLabel.AutoSize = true;
+            product_nameLabel.Location = new System.Drawing.Point(43, 60);
+            product_nameLabel.Name = "product_nameLabel";
+            product_nameLabel.Size = new System.Drawing.Size(99, 17);
+            product_nameLabel.TabIndex = 2;
+            product_nameLabel.Text = "product name:";
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new System.Drawing.Point(61, 93);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(81, 17);
+            descriptionLabel.TabIndex = 4;
+            descriptionLabel.Text = "description:";
+            // 
+            // standard_costLabel
+            // 
+            standard_costLabel.AutoSize = true;
+            standard_costLabel.Location = new System.Drawing.Point(44, 126);
+            standard_costLabel.Name = "standard_costLabel";
+            standard_costLabel.Size = new System.Drawing.Size(98, 17);
+            standard_costLabel.TabIndex = 6;
+            standard_costLabel.Text = "standard cost:";
+            // 
+            // list_priceLabel
+            // 
+            list_priceLabel.AutoSize = true;
+            list_priceLabel.Location = new System.Drawing.Point(474, 28);
+            list_priceLabel.Name = "list_priceLabel";
+            list_priceLabel.Size = new System.Drawing.Size(64, 17);
+            list_priceLabel.TabIndex = 8;
+            list_priceLabel.Text = "list price:";
+            // 
+            // target_levelLabel
+            // 
+            target_levelLabel.AutoSize = true;
+            target_levelLabel.Location = new System.Drawing.Point(456, 57);
+            target_levelLabel.Name = "target_levelLabel";
+            target_levelLabel.Size = new System.Drawing.Size(82, 17);
+            target_levelLabel.TabIndex = 10;
+            target_levelLabel.Text = "target level:";
+            // 
+            // reorder_levelLabel
+            // 
+            reorder_levelLabel.AutoSize = true;
+            reorder_levelLabel.Location = new System.Drawing.Point(446, 90);
+            reorder_levelLabel.Name = "reorder_levelLabel";
+            reorder_levelLabel.Size = new System.Drawing.Size(92, 17);
+            reorder_levelLabel.TabIndex = 12;
+            reorder_levelLabel.Text = "reorder level:";
+            // 
+            // minimum_reorder_quantityLabel
+            // 
+            minimum_reorder_quantityLabel.AutoSize = true;
+            minimum_reorder_quantityLabel.Location = new System.Drawing.Point(366, 123);
+            minimum_reorder_quantityLabel.Name = "minimum_reorder_quantityLabel";
+            minimum_reorder_quantityLabel.Size = new System.Drawing.Size(172, 17);
+            minimum_reorder_quantityLabel.TabIndex = 14;
+            minimum_reorder_quantityLabel.Text = "minimum reorder quantity:";
+            // 
+            // quantity_per_unitLabel
+            // 
+            quantity_per_unitLabel.AutoSize = true;
+            quantity_per_unitLabel.Location = new System.Drawing.Point(748, 30);
+            quantity_per_unitLabel.Name = "quantity_per_unitLabel";
+            quantity_per_unitLabel.Size = new System.Drawing.Size(114, 17);
+            quantity_per_unitLabel.TabIndex = 16;
+            quantity_per_unitLabel.Text = "quantity per unit:";
+            // 
+            // discontinuedLabel
+            // 
+            discontinuedLabel.AutoSize = true;
+            discontinuedLabel.Location = new System.Drawing.Point(770, 62);
+            discontinuedLabel.Name = "discontinuedLabel";
+            discontinuedLabel.Size = new System.Drawing.Size(92, 17);
+            discontinuedLabel.TabIndex = 18;
+            discontinuedLabel.Text = "discontinued:";
+            // 
+            // categoryLabel
+            // 
+            categoryLabel.AutoSize = true;
+            categoryLabel.Location = new System.Drawing.Point(795, 95);
+            categoryLabel.Name = "categoryLabel";
+            categoryLabel.Size = new System.Drawing.Size(67, 17);
+            categoryLabel.TabIndex = 20;
+            categoryLabel.Text = "category:";
+            // 
             // databaseQuanLyBanHangDataSet
             // 
             this.databaseQuanLyBanHangDataSet.DataSetName = "DatabaseQuanLyBanHangDataSet";
@@ -117,15 +216,6 @@
             this.tableAdapterManager.productsTableAdapter = this.productsTableAdapter;
             this.tableAdapterManager.UpdateOrder = QuanLyBanHang.DatabaseQuanLyBanHangDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // product_codeLabel
-            // 
-            product_codeLabel.AutoSize = true;
-            product_codeLabel.Location = new System.Drawing.Point(47, 28);
-            product_codeLabel.Name = "product_codeLabel";
-            product_codeLabel.Size = new System.Drawing.Size(95, 17);
-            product_codeLabel.TabIndex = 1;
-            product_codeLabel.Text = "product code:";
-            // 
             // txtproduct_code
             // 
             this.txtproduct_code.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "product_code", true));
@@ -133,15 +223,6 @@
             this.txtproduct_code.Name = "txtproduct_code";
             this.txtproduct_code.Size = new System.Drawing.Size(164, 22);
             this.txtproduct_code.TabIndex = 2;
-            // 
-            // product_nameLabel
-            // 
-            product_nameLabel.AutoSize = true;
-            product_nameLabel.Location = new System.Drawing.Point(43, 60);
-            product_nameLabel.Name = "product_nameLabel";
-            product_nameLabel.Size = new System.Drawing.Size(99, 17);
-            product_nameLabel.TabIndex = 2;
-            product_nameLabel.Text = "product name:";
             // 
             // txtproduct_name
             // 
@@ -151,15 +232,6 @@
             this.txtproduct_name.Size = new System.Drawing.Size(164, 22);
             this.txtproduct_name.TabIndex = 3;
             // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(61, 93);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(81, 17);
-            descriptionLabel.TabIndex = 4;
-            descriptionLabel.Text = "description:";
-            // 
             // txtdescription
             // 
             this.txtdescription.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "description", true));
@@ -167,15 +239,6 @@
             this.txtdescription.Name = "txtdescription";
             this.txtdescription.Size = new System.Drawing.Size(164, 22);
             this.txtdescription.TabIndex = 5;
-            // 
-            // standard_costLabel
-            // 
-            standard_costLabel.AutoSize = true;
-            standard_costLabel.Location = new System.Drawing.Point(44, 126);
-            standard_costLabel.Name = "standard_costLabel";
-            standard_costLabel.Size = new System.Drawing.Size(98, 17);
-            standard_costLabel.TabIndex = 6;
-            standard_costLabel.Text = "standard cost:";
             // 
             // txtstandard_cost
             // 
@@ -185,15 +248,6 @@
             this.txtstandard_cost.Size = new System.Drawing.Size(164, 22);
             this.txtstandard_cost.TabIndex = 7;
             // 
-            // list_priceLabel
-            // 
-            list_priceLabel.AutoSize = true;
-            list_priceLabel.Location = new System.Drawing.Point(474, 28);
-            list_priceLabel.Name = "list_priceLabel";
-            list_priceLabel.Size = new System.Drawing.Size(64, 17);
-            list_priceLabel.TabIndex = 8;
-            list_priceLabel.Text = "list price:";
-            // 
             // txtlist_price
             // 
             this.txtlist_price.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "list_price", true));
@@ -201,15 +255,6 @@
             this.txtlist_price.Name = "txtlist_price";
             this.txtlist_price.Size = new System.Drawing.Size(145, 22);
             this.txtlist_price.TabIndex = 9;
-            // 
-            // target_levelLabel
-            // 
-            target_levelLabel.AutoSize = true;
-            target_levelLabel.Location = new System.Drawing.Point(456, 57);
-            target_levelLabel.Name = "target_levelLabel";
-            target_levelLabel.Size = new System.Drawing.Size(82, 17);
-            target_levelLabel.TabIndex = 10;
-            target_levelLabel.Text = "target level:";
             // 
             // nudtarget_level
             // 
@@ -219,15 +264,6 @@
             this.nudtarget_level.Size = new System.Drawing.Size(145, 22);
             this.nudtarget_level.TabIndex = 11;
             // 
-            // reorder_levelLabel
-            // 
-            reorder_levelLabel.AutoSize = true;
-            reorder_levelLabel.Location = new System.Drawing.Point(446, 90);
-            reorder_levelLabel.Name = "reorder_levelLabel";
-            reorder_levelLabel.Size = new System.Drawing.Size(92, 17);
-            reorder_levelLabel.TabIndex = 12;
-            reorder_levelLabel.Text = "reorder level:";
-            // 
             // nudreorder_level
             // 
             this.nudreorder_level.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productsBindingSource, "reorder_level", true));
@@ -235,15 +271,6 @@
             this.nudreorder_level.Name = "nudreorder_level";
             this.nudreorder_level.Size = new System.Drawing.Size(145, 22);
             this.nudreorder_level.TabIndex = 13;
-            // 
-            // minimum_reorder_quantityLabel
-            // 
-            minimum_reorder_quantityLabel.AutoSize = true;
-            minimum_reorder_quantityLabel.Location = new System.Drawing.Point(366, 123);
-            minimum_reorder_quantityLabel.Name = "minimum_reorder_quantityLabel";
-            minimum_reorder_quantityLabel.Size = new System.Drawing.Size(172, 17);
-            minimum_reorder_quantityLabel.TabIndex = 14;
-            minimum_reorder_quantityLabel.Text = "minimum reorder quantity:";
             // 
             // nudminimum_reorder_quantity
             // 
@@ -253,15 +280,6 @@
             this.nudminimum_reorder_quantity.Size = new System.Drawing.Size(145, 22);
             this.nudminimum_reorder_quantity.TabIndex = 15;
             // 
-            // quantity_per_unitLabel
-            // 
-            quantity_per_unitLabel.AutoSize = true;
-            quantity_per_unitLabel.Location = new System.Drawing.Point(748, 30);
-            quantity_per_unitLabel.Name = "quantity_per_unitLabel";
-            quantity_per_unitLabel.Size = new System.Drawing.Size(114, 17);
-            quantity_per_unitLabel.TabIndex = 16;
-            quantity_per_unitLabel.Text = "quantity per unit:";
-            // 
             // txtquantity_per_unit
             // 
             this.txtquantity_per_unit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "quantity_per_unit", true));
@@ -270,15 +288,6 @@
             this.txtquantity_per_unit.Size = new System.Drawing.Size(161, 22);
             this.txtquantity_per_unit.TabIndex = 17;
             // 
-            // discontinuedLabel
-            // 
-            discontinuedLabel.AutoSize = true;
-            discontinuedLabel.Location = new System.Drawing.Point(770, 62);
-            discontinuedLabel.Name = "discontinuedLabel";
-            discontinuedLabel.Size = new System.Drawing.Size(92, 17);
-            discontinuedLabel.TabIndex = 18;
-            discontinuedLabel.Text = "discontinued:";
-            // 
             // txtdiscontinued
             // 
             this.txtdiscontinued.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "discontinued", true));
@@ -286,15 +295,6 @@
             this.txtdiscontinued.Name = "txtdiscontinued";
             this.txtdiscontinued.Size = new System.Drawing.Size(161, 22);
             this.txtdiscontinued.TabIndex = 19;
-            // 
-            // categoryLabel
-            // 
-            categoryLabel.AutoSize = true;
-            categoryLabel.Location = new System.Drawing.Point(795, 95);
-            categoryLabel.Name = "categoryLabel";
-            categoryLabel.Size = new System.Drawing.Size(67, 17);
-            categoryLabel.TabIndex = 20;
-            categoryLabel.Text = "category:";
             // 
             // txtcategory
             // 
@@ -481,6 +481,7 @@
             this.Controls.Add(product_codeLabel);
             this.Controls.Add(this.txtproduct_code);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Frmdanhmucsanpham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Mục Sản Phẩm";

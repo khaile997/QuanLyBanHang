@@ -478,6 +478,7 @@
             this.Controls.Add(last_nameLabel);
             this.Controls.Add(this.txtlastname);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmDanhmuckhachhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Mục Khách Hàng";
